@@ -45,7 +45,7 @@ span {
 
 .navbar {
     display: flex;
-    align-items: center;
+    align-items: center; /* Center align the items */
 }
 
 .navbar a {
@@ -53,15 +53,15 @@ span {
     color: white;
     font-weight: 500;
     margin: 0 20px;
-    padding: 10px;
+    padding: 10px; /* Add padding to increase button size */
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: orangered !important;
-    border-bottom: 3px solid orangered !important;
+    color: orangered;
+    border-bottom: 3px solid orangered;
 }
 
 .contact {
