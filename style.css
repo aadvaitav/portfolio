@@ -93,17 +93,24 @@ span {
 }
 
 .home-content h3 {
-    font-size: 42px;
+    font-size: 2.5em; /* Adjust font size for smaller screens */
 }
 
 .home-content h1 {
-    font-size: 62px;
+    font-size: 3.5em; /* Adjust font size for smaller screens */
     line-height: 1.2;
 }
 
 .home-content p {
-    font-size: 18px;
+    font-size: 1.5em; /* Adjust font size for smaller screens */
     margin: 25px 0 30px;
+}
+
+.img-box img {
+    position: relative;
+    width: 100%; /* Make image responsive */
+    max-width: 450px; /* Limit maximum image size */
+    border-radius: 50%;
 }
 
 .btn-box {
@@ -176,7 +183,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .about-img img {
     position: relative;
-    width: 550px;
+    width: 350px;
     border-radius: 50%;
 }
 
@@ -195,4 +202,147 @@ body::-webkit-scrollbar-thumb:hover {
     color: white;
     font-size: 20px;
     margin: 2em 0 3em;
+}
+@media only screen and (max-width: 480px) {
+    .header {
+        padding: 20px 6%;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    .home,
+    .about {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        padding: 15px 6% 0;
+    }
+
+    .home-content h3,
+    .home-content h1,
+    .home-content p,
+    .about-content h2,
+    .about-content h3,
+    .about-content p {
+        text-align: center;
+    }
+
+    .home-content h3 {
+        font-size: 2em;
+    }
+
+    .home-content h1 {
+        font-size: 2.5em;
+    }
+
+    .home-content p {
+        font-size: 1em;
+    }
+
+    .img-box img,
+    .about-img img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about {
+        padding: 8% 6%;
+        gap: 4em;
+    }
+
+    .about-img img {
+        width: 200px;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .about-content h3 {
+        font-size: 36px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 25px 6%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .home {
+        gap: 3em;
+        padding: 20px 6% 0;
+    }
+
+    .home-content h3 {
+        font-size: 2em;
+    }
+
+    .home-content h1 {
+        font-size: 3em;
+    }
+
+    .home-content p {
+        font-size: 1.2em;
+    }
+
+    .img-box img {
+        max-width: 300px;
+    }
+
+    .about {
+        padding: 10% 6%;
+        gap: 5em;
+    }
+
+    .about-content {
+        padding: 1em;
+    }
+
+    .about-img img {
+        width: 180px;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+    .about-content h3 {
+        font-size: 48px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
 }
